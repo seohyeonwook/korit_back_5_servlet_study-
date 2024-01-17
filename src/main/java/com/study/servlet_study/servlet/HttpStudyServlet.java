@@ -1,4 +1,4 @@
-package com.study.servlet_study.servlet;
+package com.study.servlet_study.servlet;//2번째
 
 import java.io.IOException;
 import java.util.Arrays;

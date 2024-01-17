@@ -1,7 +1,6 @@
-package com.study.servlet_study.filter;
+package com.study.servlet_study.filter;//1번째
 
 import java.io.IOException;
-import java.net.http.HttpResponse;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;

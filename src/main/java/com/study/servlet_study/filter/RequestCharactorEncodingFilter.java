@@ -1,4 +1,4 @@
-package com.study.servlet_study.filter;
+package com.study.servlet_study.filter;//2번째
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -12,7 +12,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 @WebFilter("/*")
 public class RequestCharactorEncodingFilter extends HttpFilter implements Filter {

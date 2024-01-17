@@ -1,4 +1,4 @@
-package com.study.servlet_study.utils;
+package com.study.servlet_study.utils;//그냥 매개변수로 넣어서 클래스에서 한번에 하자
 
 import java.util.Arrays;
 import java.util.HashMap;

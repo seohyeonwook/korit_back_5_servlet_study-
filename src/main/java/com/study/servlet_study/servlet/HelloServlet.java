@@ -1,4 +1,4 @@
-package com.study.servlet_study.servlet;
+package com.study.servlet_study.servlet;//1번째
 
 import java.io.IOException;
 
@@ -18,6 +18,8 @@ public class HelloServlet extends HttpServlet {
 	//요청 주소를 먼저 확인하고 맞으면 필터가 있는지 확인한다 dofilter 들어가서 request,response들고온다
 	//그리고 다운캐스팅 해서 인코딩 utf-8 실행하고 chin.doFilter 에 request,response 
 	//가지고 다운캐스팅해서 다시 doGet 에 들어간다
+	//http 프로토콜 = 약속된 형식대로 통신을 하겠다
+	//localhost  = this 지금 실행되고있는 자기 자신의 pc 
 	
 	
 	
