@@ -22,27 +22,39 @@ public class DBConnectionTestMain {
 		
 		try {//예외처리 하는이유 = 실행하다가 예외가 뜨면 강제로 꺼지는 데 그걸 방지하기 위해서
 			//try 안쪽 - 예외가 일어날수 있는 녀석들 넣는다
-			con = pool.getConnection();
+			con = pool.getConnection();//얘만 호출해주면 db랑 연결해준다
 			//커넥션이라는 객체에 db랑 자바랑 연결되어있음
-			String sql = "select * from author_tb";
+			String name = "junil";
+			String sql = "select * from author_tb where author_name = ?"; 
 			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, name);//물음표순서,이름
+			
 			rs = pstmt.executeQuery();//ctrl+enter 한거임
 			
 			List<Author> authorList = new ArrayList<>();
 			
-			while(rs.next()) {
+			while(rs.next()) {//다음이 있으면 또내려간다
 				authorList.add(Author.builder()
 						.authorId(rs.getInt(1))
 						.authorName(rs.getString(2))
 						.build());
 
-				//while(rs.next()) {//다음이 있으면 또내려간다
+				//while(rs.next()) {
 					//System.out.println("id: " + rs.getInt(1));//컬럼 첫번째 id
 					//System.out.println("name: "+ rs.getString(2));//컬럼 두번째 name까지하고 while로돌아가서 next
 				//
 			}
 			
-			authorList.forEach(author -> System.out.println(author));
+			authorList.forEach(author -> System.out.println(author));//()객체 주소 
+			
+//			for(Author author : authorList) {
+//				System.out.println(author);//위아래 같은그 3개
+//			}
+//			
+//			for(int i = 0; i < authorList.size(); i++) {
+//				Author author = authorList.get(i);
+//				System.out.println(author);
+//			}
 			
 			
 			

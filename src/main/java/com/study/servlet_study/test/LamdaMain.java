@@ -11,7 +11,7 @@ class Print<T> implements Consumer<T> {//클래스화
 	
 
 	@Override
-	public void accept(T t) {
+	public void accept(T t) { //int a 
 		System.out.println(t);//t라는 매개변수받아서 그냥 호출 해주는
 		
 	}
@@ -50,7 +50,7 @@ public class LamdaMain {
 	
 	public static void forEach(Consumer<Author> action) {
 		action.accept(Author.builder().authorId(4).authorName("김준사").build());
-		//주소를 넘겨주는다는 개념이 중요해!!!!!!!
+		//주소를 넘겨주는다는 개념이 중요해
 		//데이터의 자료형이 정해져 있어야 한다!!!!!!!!
 		
 	}
