@@ -7,6 +7,12 @@
   <name>servlet_study</name>
   
   <dependencies>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
 
 <dependency>
     <groupId>org.apache.tomcat</groupId>
@@ -21,6 +27,11 @@
     <scope>provided</scope>
 </dependency>
 
+  	<dependency>
+  		<groupId>com.study</groupId>
+  		<artifactId>java_study</artifactId>
+  		<version>1.0-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   
   <build>
