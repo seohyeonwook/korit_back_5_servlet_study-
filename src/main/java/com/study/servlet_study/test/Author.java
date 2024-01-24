@@ -1,4 +1,4 @@
-package com.study.servlet_study.entity;
+package com.study.servlet_study.test;
 
 import lombok.Builder;
 import lombok.Data;

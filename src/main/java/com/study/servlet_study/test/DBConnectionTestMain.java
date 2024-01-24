@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.study.servlet_study.config.DBConnectionMgr;
-import com.study.servlet_study.entity.Author;
 
 public class DBConnectionTestMain {
 	public static void main(String[] args) {
@@ -15,13 +14,13 @@ public class DBConnectionTestMain {
 																						// 똑바로서있으면 일반 멤버 변수
 		//getConnection 일반 메서드 는 생성해야지만 사용가능 싱글톤으로 객체 생성 후에 사용가능		
 		//
-		 Connection con = null;
+		 Connection con = null;//인터페이스를 규ㅜ현한 크랫
 		 PreparedStatement pstmt = null;
 		 ResultSet rs = null;
+		 
 		
 		
 		try {//예외처리 하는이유 = 실행하다가 예외가 뜨면 강제로 꺼지는 데 그걸 방지하기 위해서
-			//try 안쪽 - 예외가 일어날수 있는 녀석들 넣는다
 			con = pool.getConnection();//얘만 호출해주면 db랑 연결해준다
 			//커넥션이라는 객체에 db랑 자바랑 연결되어있음
 			String name = "junil";

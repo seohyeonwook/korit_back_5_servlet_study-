@@ -2,8 +2,6 @@ package com.study.servlet_study.test;
 
 import java.util.function.Consumer;
 
-import com.study.servlet_study.entity.Author;
-
 class Print<T> implements Consumer<T> {//클래스화
 	// Consumer 인터페이스 자체적으로 생성불가  추상화적인 애들을 구체화시켜야함 ->객체화 시켜야함
 	// Consumer라는 제네릭을 implements를 하려면 class도 제네릭 타입이어야한다 -> class Print<T>
